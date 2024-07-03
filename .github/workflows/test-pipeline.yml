@@ -1,0 +1,8 @@
+name: Call Python package workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-python-package:
+    uses: ./.github/workflows/test.yml
