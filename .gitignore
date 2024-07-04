@@ -2,3 +2,6 @@ __pycache__
 venv
 .idea 
 .pytest_cache
+dist
+.eggs
+test_package.egg-info
