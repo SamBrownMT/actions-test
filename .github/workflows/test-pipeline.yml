@@ -6,3 +6,7 @@ on:
 jobs:
   call-python-package:
     uses: ./.github/workflows/test.yml
+    
+  check-wheel:
+    needs: [call-python-package]
+    uses: ./.github/workflows/check-wheel.yml
