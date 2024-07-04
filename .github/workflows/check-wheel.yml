@@ -20,10 +20,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install check-wheel-contents
 
-    - name: Build wheel
+    - name: Build wheel 
+      working-directory: test_package
       run: |
-        python test_package/setup.py sdist bdist_wheel
+        python setup.py sdist bdist_wheel
 
     - name: Check wheel contents
       run: |
-        check-wheel-contents dist/*.whl
+        check-wheel-contents test_package/dist/*.whl
