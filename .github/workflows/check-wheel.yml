@@ -22,7 +22,7 @@ jobs:
 
     - name: Build wheel
       run: |
-        python setup.py sdist bdist_wheel
+        python test_package/setup.py sdist bdist_wheel
 
     - name: Check wheel contents
       run: |
